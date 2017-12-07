@@ -10,3 +10,4 @@ ${CURL} --header "Access-Token: ${PUSHBULLET_TOKEN}" \
 		--request POST \
 		--data-binary "{\"type\": \"note\", \"title\": \"${PUSHBULLET_TITLE}\", \"body\": \"$1\"}" \
 		https://api.pushbullet.com/v2/pushes
+
