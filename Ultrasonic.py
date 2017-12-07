@@ -43,4 +43,3 @@ class Ultrasonic:
 			sigon = time.time()
 
 		return (sigon - sigoff) * 17000
-
