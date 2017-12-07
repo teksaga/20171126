@@ -1,14 +1,14 @@
-# teksaga $BKIHH%7%9%F%`(B
+# teksaga 防犯システム
 
-## $B35MW(B
+## 概要
 
-$B%;%s%5!<$K6a$E$/$H%9%^%[$K%W%C%7%eDLCN(B(Pushbullet$B7PM3(B)
+センサーに近づくとスマホにプッシュ通知(Pushbullet経由)
 
-## $B<j=g(B
+## 手順
 
-1. png$B2hA|$K=>$$!"%i%:%Q%$$N(BGPIO$B$+$i2sO)$rAH$`(B
-1. $BF1$8%G%#%l%/%H%j$K(BUltrasonic.py mypush.sh ultrasoundpush.py $B$rCV$-<B9T8"8B$rM?$($k(B
-1. [Pushbullet](https://www.pushbullet.com)$B$KEPO?$7!"(BSettings$B$N(BCreateAccessToken$B$+$iJ8;zNs$r@8@.$7!"(Bmypush.sh$B$N(BYourPushbulletAccessToken$B$N$H$3$m$K@8@.$7$?%"%/%;%9%H!<%/%s$r5-F~(B
-1. $B%9%^!<%HC<Kv$K%"%W%j$rF~$l!"DLCN$r5v2D(B
-1. ultrasoundpush.py$B$r<B9T(B
-1. $B0lDj;~4V0J>e%;%s%5!<$,?M$d$b$N$r8!CN$9$k$H!"%9%^!<%HC<Kv$KDLCN$,Ht$V(B
+1. png画像に従い、ラズパイのGPIOから回路を組む
+1. 同じディレクトリにUltrasonic.py mypush.sh ultrasoundpush.py を置き実行権>    限を与える
+1. [Pushbullet](https://www.pushbullet.com)に登録し、SettingsのCreateAccessT    okenから文字列を生成し、mypush.shのYourPushbulletAccessTokenのところに生成したアクセストークンを記入
+1. スマート端末にアプリを入れ、通知を許可
+1. ultrasoundpush.pyを実行
+1. 一定時間以上センサーが人やものを検知すると、スマート端末に通知が飛ぶ
